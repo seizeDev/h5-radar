@@ -1,165 +1,538 @@
-.zhibao-box{
-    width: 1380px;
+.youmu-box{
+    width: 1920px;
     margin: 0 auto;
 }
-.zhibao-header{
-    width: 100%;
+
+.youmu-header{
+    width: 1920px;
+    height: 104px;
+    overflow: hidden;
+    position: fixed;
+    background: #fff;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+.youmu-header_img{
+    background: url("../image/logo.png") no-repeat left center;
+    background-size: 60px 60px;
+    padding-left: 72px;
+    font-size: 22px;
+    color: #37B0AA;
+    line-height: 60px;
     height: 60px;
+    margin: 22px 0 0 410px;
+    float: left;
 }
-.zhibao-header-logo{
-    height: 50px;
-    margin: 5px auto 5px;
-    display: block;
+.youmu-header_list{
+    float: right;
+    margin-right: 390px;
 }
-.zhibao-banner{
+.youmu-header_list li{
+    padding: 0 12px;
+    color: #666666;
+    float: left;
+    font-size: 18px;
+    line-height: 100px;
+    margin-left: 20px;
+    height: 100px;
+    cursor: pointer;
+}
+.youmu-header_list li a{
+    color: #666666;
     width: 100%;
+    height: 100%;
+    display: inline-block;
 }
-.zhibao-content{
-    width:100%;
-    height: 700px;
+.youmu-header_list li:hover{
+    color: #37B0AA;
+    border-bottom: 4px solid #37B0AA;
+}
+.youmu-header_list li:hover a{
+    color: #37B0AA;
+}
+/*侧栏*/
+.youmu-aside{
+    position: fixed;
+    right: 52px;
+    width: 92px;
+    -moz-box-shadow:0px 0px 5px #D2D2D2;
+    -webkit-box-shadow:0px 0px 5px #D2D2D2;
+    box-shadow:0px 0px 5px #D2D2D2;
+    padding-bottom: 15px;
+    top:50%;
+    margin-top: -300px;
+    background: #fff;
+}
+.youmu-aside-list{
+    padding-top: 57px;
+    padding-bottom: 15px;
+    width: 92px;
+    background: url("../image/wechat.png") no-repeat center 15px;
+    background-size: 24px 24px;
+    font-size: 13px;
+    color: #999;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
     position: relative;
 }
-.zhibao-introduce{
-    width: 1000px;
-    background: #f8f8f8;
-    height: 350px;
+.youmu-aside-list:hover{
+    background-color: #F0F0F0;
+}
+.youmu-aside-list p{
     position: absolute;
-    top:-50px;
-    left:190px;
+    background: url("../image/aslide_wechat.jpg") no-repeat center center;
+    background-size: 87px 87px;
+    width: 110px;
+    height: 110px;
+    -moz-box-shadow:0px 0px 5px #D2D2D2;
+    -webkit-box-shadow:0px 0px 5px #D2D2D2;
+    box-shadow:0px 0px 5px #D2D2D2;
+    left: -120px;
+    top: 0px;
+    display: none;
+}
+
+.youmu-aside-list_wechat{
+    background-image: url("../image/wechat.png");
+}
+.youmu-aside-list_wechat:hover p{
+   display: block;
+}
+.youmu-aside-list_weibo{
+    background-image: url("../image/weibo.png");
+}
+.youmu-aside-list_weibo:hover p{
+    background-image: url("../image/aslide_weibo.png");
+    display: block;
+}
+.youmu-aside-list_qq{
+    background-image: url("../image/qq.png");
+}
+.youmu-aside-list_qq:hover p{
+    background-image: url("../image/aslide_qq.jpg");
+    display: block;
+}
+.youmu-aside-list_app{
+    background-image: url("../image/app.png");
+}
+.youmu-aside-list_app:hover p{
+    background-image: url("../image/youmu_dowload.png");
+    display: block;
+}
+.youmu-aside-list_pc{
+    background-image: url("../image/pc.png");
+}
+.youmu-aside-list_top{
+    background-image: url("../image/top.png");
+}
+
+/**/
+.youmu-app1{
+    height: 860px;
+    background: url("../image/bj_01.png") no-repeat left top;
+    background-size: 1065px 680px;
+    overflow: hidden;
+    margin-top: 104px;
+}
+.youmu-app1 .app1{
+    background: url("../image/app_01.png") no-repeat center center;
+    background-size: 342px 680px;
+    height: 680px;
+    width: 342px;
+    margin-left: 410px;
+    margin-top: 120px;
+    float: left;
+}
+.app1_content{
+    float: left;
+    padding-top: 272px;
+    padding-left: 60px;
+}
+.app1_content h2{
+    font-size: 48px;
+    color: #37B0AA;
+    line-height: 80px;
+}
+.app1_content_prompt{
+    position: relative;
+    font-size: 20px;
+    color: #666;
+    line-height: 28px;
+    margin-top: 60px;
+}
+.app1_content_prompt:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    background: #37B0AA;
+    width: 28px;
+    height: 4px;
+}
+.dowload-topapp{
+    background: #37B0AA;
+    color: #F5F5F5;
+    padding: 10px 42px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 32px;
+    margin-right: 50px;
+    position: relative;
 
 }
-.zhibao-introduce li{
-    width: 33.33%;
+.dowload-topapp p{
+    position: absolute;
+    background: url("../image/youmu_dowload.png") no-repeat center center #fff;
+    background-size: 120px 120px;
+    width: 140px;
+    height: 140px;
+    -moz-box-shadow:0px 0px 5px #D2D2D2;
+    -webkit-box-shadow:0px 0px 5px #D2D2D2;
+    box-shadow:0px 0px 5px #D2D2D2;
+    left: 50%;
+    top: 101%;
+    margin-left: -70px;
+    display: none;
+}
+.dowload-topapp:hover p{
+    display: block;
+}
+.dowload-topapp span{
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: #fff;
+}
+.app1_content_ios{
+    margin-top: 36px;
+    font-size: 16px;
+}
+.youmu-app2{
+    color: #666;
+    position: relative;
+}
+.youmu-app2_bj{
+    position: absolute;
+    right: 0;
+    top:440px;
+    background: url("../image/bj_02.png") no-repeat right center;
+    background-size: 594px 1259px;
+    width: 594px;
+    height: 1259px;
+}
+.youmu-app2_bj3{
+    position: absolute;
+    left: 0;
+    top:800px;
+    background: url("../image/bj_03.png") no-repeat left center;
+    background-size: 402px 786px;
+    width: 402px;
+    height: 786px;
+}
+.youmu-app2 a{
+    color: #6381CE;
+    border-bottom: 1px solid #6381CE;
+}
+.youmu-appa{
+    margin-top: 36px;
+    color: #6381CE;
+    border-bottom: 1px solid #6381CE;
+    cursor: pointer;
+    font-size: 16px;
+}
+.youmu-title{
+    font-size: 32px;
+    color: #37B0AA;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 240px;
+}
+.youmu-small-title{
+    font-size: 12px;
+    color: #37B0AA;
+    text-align: center;
+}
+.app2_list{
+    margin-top: 80px;
+    overflow: hidden;
+    padding-left: 410px;
+}
+.app2_list_1{
+    padding-top: 628px;
+    width: 292px;
+    background: url("../image/app_02.png") no-repeat center top;
+    background-size: 292px 592px;
     float: left;
-    padding: 10px;
-    height: 350px;
+    margin-right: 120px;
+
+}
+.app2_list_2{
+    padding-top: 628px;
+    width: 292px;
+    background: url("../image/app_03.png") no-repeat center top;
+    background-size: 292px 592px;
+    float: left;
+    margin-right: 120px;
+}
+.app2_list_3{
+    padding-top: 628px;
+    width: 292px;
+    background: url("../image/app_04.png") no-repeat center top;
+    background-size: 292px 592px;
+    float: left;
+}
+.app2_list_4{
+    padding-top: 628px;
+    width: 292px;
+    background: url("../image/app_05.png") no-repeat center top;
+    background-size: 292px 592px;
+    float: left;
+    margin-right: 120px;
+
+}
+.app2_list_5{
+    padding-top: 628px;
+    width: 292px;
+    background: url("../image/app_06.png") no-repeat center top;
+    background-size: 292px 592px;
+    float: left;
+    margin-right: 120px;
+}
+.app2_list_6{
+    padding-top: 628px;
+    width: 292px;
+    background: url("../image/app_07.png") no-repeat center top;
+    background-size: 292px 592px;
+    float: left;
+}
+.app2_list h4{
+    font-size: 22px;
+    color: #37B0AA;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.app2_list p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+}
+.app2_pc{
+    width: 900px;
+    height: 636px;
+    margin-top: 80px;
+    background: url("../image/app_pc.png") no-repeat center center;
+    background-size: 900px 636px;
+    margin-left: 510px;
+}
+
+.app2_detail h4{
+    font-size: 22px;
+    color: #37B0AA;
+    margin-top: 26px;
+    text-align: center;
+}
+.app2_detail p{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+}
+
+/*底部*/
+.youmu-footer{
+    margin-top: 138px;
+    background: #333333;
+    padding: 48px 0 0 0;
+    color: #F5F5F5;
+    overflow: hidden;
+}
+.youmu-footer_list{
+    width: 978px;
+    height: 160px;
+    margin: 0 auto;
+}
+.youmu-footer_list h4{
+    padding: 20px 10px;
+    font-size: 20px;
+    position: absolute;
+    left: -20px;
+    top: -28px;
+    background: #37B0AA;
+    line-height: 1.4;
+}
+.youmu-footer_list p{
+    padding-top: 12px;
+    font-size: 14px;
+    color: #F5F5F5;
+}
+.youmu-footer_list li{
+    float: left;
+    border: 1px solid #37B0AA;
+    width: 400px;
+    height: 160px;
+    padding: 20px 0 0 30px;
+    position: relative;
     box-sizing: border-box;
 }
-.zhibao-introduce li img{
-    width: 90px;
-    display: block;
-    margin: 50px auto 20px;
+.youmu-footer_list .right-li{
+    margin-right: 178px;
 }
-.zhibao-introduce li h4{
+.dowload-app{
+    color: #666;
+    font-size: 12px;
     text-align: center;
-    line-height: 1.5;
+    padding: 8px 14px;
+    border-radius: 1px;
+    margin-right: 30px;
+    margin-top: 32px;
+}
+.dowload-app span{
+    font-size: 16px;
+    line-height: 22px;
+    color: #333;
+    margin-bottom: 4px;
+}
+.youmu-footer_beian{
+    font-size: 13px;
+    color: #999;
+    padding: 25px 0;
+    text-align: center;
+    clear: both;
+    margin-top: 60px;
+    border-top: 2px solid #999;
+    margin-bottom: 64px;
+}
+
+/*弹窗*/
+.youmu-modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom:0 ;
+    left: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 1;
+    display: none;
+}
+.youmu-modal_box{
+    position: absolute;
+    width: 960px;
+    height: 460px;
+    top: 50%;
+    left: 50%;
+    margin-top: -230px;
+    margin-left: -480px;
+    background: #fff;
+    border-radius: 16px;
+}
+
+.youmu-modal_title{
+    margin: 52px 0 96px;
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+}
+.youmu-modal_list{
+    color: #37B0AA;
     font-size: 24px;
 }
-.zhibao-introduce li h6{
-    text-align: center;
-    font-size: 15px;
-    line-height: 2;
-    color:#999;
-}
-.zhibao-introduce li h7{
-    text-align: center;
-    line-height: 2;
-    color:#666;
-}
-.zhibao-detailed{
-    width: 1000px;
-    position: absolute;
-    height: 300px;
-    top:350px;
-    left:190px;
-}
-.zhibao-detailed li{
-    margin-right: 50px;
-    width: 300px;
-    height: 300px;
-    background: #f8f8f8;
-    float: left;
-}
-.zhibao-detailed li img{
-    width: 100%;
-}
-.zhibao-detailed li h6{
-    font-size: 12px;
-    padding: 32px 10px 0;
-    line-height: 2;
-}
-.zhibao-detailed li:last-child{
-    margin-right: 0;
-}
-.zhibao-address{
-    width:100%;
+.youmu-modal_list li{
+    cursor: pointer;
     position: relative;
+    width: 120px;
+    padding-top: 120px;
+    background: url("../image/app_dowload.png") no-repeat center top;
+    background-size: 100px 100px;
+    float: left;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 248px;
 }
-.zhibao-address img{
-    width: 100%;
+.youmu-modal_list .youmu-modal_pc{
+    background-image: url("../image/pc_dowload.png");
+}
+.youmu-modal_list .youmu-modal_app_span{
+    position: absolute;
+    background: url("../image/old_youmu_dowload.png") no-repeat center center #fff;
+    background-size: 120px 120px;
+    width: 140px;
+    height: 140px;
+    -moz-box-shadow:0px 0px 5px #D2D2D2;
+    -webkit-box-shadow:0px 0px 5px #D2D2D2;
+    box-shadow:0px 0px 5px #D2D2D2;
+    left: 50%;
+    top: 0;
+    margin-left: -70px;
+    display: none;
+}
+.youmu-modal_list .youmu-modal_app:hover .youmu-modal_app_span{
     display: block;
 }
-.zhibao-address-msg{
+.youmu-modal_close{
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    background: url("../image/close.png") no-repeat center center;
     position: absolute;
-    font-size: 16px;
-    color:#fff;
-    top:50px;
-    left:500px;
+    right: 20px;
+    top:20px;
 }
-.zhibao-address-msg li{
-    line-height: 2.5;
-    padding-left: 20px;
+@keyframes marquee {
+    0% {
+        transform: translateX(200px);
+    }
+    50% {
+        transform: translateX(-500px); // 每行高50
+    }
+    100%{
+        transform: translateX(200px); // 每行高50
+    }
 }
-.zhibao-address-msg .one{
-    background: url("../img/address.png") no-repeat 2px center;
-    background-size: 12px 16px;
-}
-.zhibao-address-msg .two{
-    background: url("../img/email.png") no-repeat left center;
-    background-size: 16px 12px;
-}
-.zhibao-address-msg .three{
-    background: url("../img/phone.png") no-repeat 2px center;
-    background-size: 12px 16px;
-}
-.zhibao-footer{
+.youmu-announcement{
     width: 100%;
-    height: 50px;
-    line-height: 50px;
-    background: #333;
-    font-size: 16px;
-    text-align: center;
-    color:#fff;
+    padding: 0 50px;
+    bottom: 0;
+    left: 0;
+    background: #FFFDE4;
+    height: 64px;
+    line-height: 64px;
+    position: fixed;
 }
-.zhibao_banner_box{
-    position: relative;
+.youmu-announcement_name{
+    white-space:nowrap;
+    /*-webkit-animation: marquee 15s linear infinite;*/
+    /*animation: marquee 15s linear infinite;*/
 }
-.immediately_pay{
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    background: #fff;
-    border-radius: 10px;
-    right:220px;
-    top:100px;
-    text-align: center;
-}
-.immediately_pay img{
-    width: 50px;
-    height: 50px;
-    margin-top:30px;
-}
-.immediately_pay p{
-    margin-top:20px;
 
+.box {
+    width: 100%;
+    padding: 0 50px;
+    bottom: 0;
+    left: 0;
+    background: #FFFDE4;
+    height: 64px;
+    line-height: 64px;
+    position: fixed;
 }
-.immediately_pay_top{
-    font-size: 25px;
-    color:#333;
+.winBox {
+    width:100%;
+    height:64px;
+    overflow:hidden;
+    position:relative;
 }
-.immediately_pay_bottom{
-    font-size: 15px;
-    color:#999;
-    padding-top:10px;
+.scroll {
+    white-space:nowrap;
+    position:absolute;
+    left:0px;
+    top:0px;
 }
-.immediately_pay_btn{
-    display: inline-block;
-    width: 150px;
-    height: 30px;
-    background: #0193d6;
-    color:#fff;
-    margin-top: 30px;
-    border-radius: 5px;
-    border:none;
-    line-height: 30px;
+.scroll li {
+    white-space:nowrap;
+    float:left;
+    line-height:64px;
+    text-align:center;
 }
+ul.line{width:500px; height:30px; background:#eee; overflow:hidden;margin-bottom:20px;border:2px solid #a40000}
+ul.line li{height:30px;text-indent:15px; font-size:12px; line-height:30px;list-style:none}
+
