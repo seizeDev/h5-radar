@@ -172,7 +172,11 @@
     </footer>
     <div class="youmu-announcement">
         <div class="youmu-announcement_name">
-            <marquee loop="2"> 游募1.0预计将于2019年8月10日停止服务，请各位老用户尽快完成游募1.0内的订单，并完成提现，到期未完成订单会强制关闭，未提现金额会强制退款。欢迎下载游募2.0和我们继续同行，感谢理解！</marquee>
+            <marquee class="youmu-announcement_marquee" behavior="scroll" contenteditable="true"
+                     onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;"
+                     align="absmiddle"
+                     scrollamount="6" onmouseover="this.stop();"
+                     onmouseout="this.start();"> 游募1.0预计将于2019年8月10日停止服务，请各位老用户尽快完成游募1.0内的订单，并完成提现，到期未完成订单会强制关闭，未提现金额会强制退款。欢迎下载游募2.0和我们继续同行，感谢理解！</marquee>
         </div>
     </div>
 </div>
