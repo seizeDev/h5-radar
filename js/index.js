@@ -10,6 +10,13 @@ $(function () {
             return true
         }
     }
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        console.log('移动端')
+        $('#youmuModal1 .youmu-modal_box1').addClass('youmu-modal_box2');
+        $('#youmuModal1 .youmu-modal_close').addClass('youmu-modal_close2')
+    } else {
+        console.log('PC端')
+    }
     console.log(current)
     if(browserRedirect() && current>=1000){
         document.getElementById('youmuBox').style.zoom =current/1920;
