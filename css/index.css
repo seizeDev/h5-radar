@@ -427,6 +427,21 @@
     border-radius: 16px;
 }
 
+.youmu-modal_box1{
+    position: absolute;
+    width: 960px;
+    height: 460px;
+    top: 50%;
+    left: 50%;
+    margin-top: -230px;
+    margin-left: -480px;
+    background-size: 960px 460px;
+}
+.youmu-modal_banner{
+    width: 100%;
+    height: 100%;
+}
+
 .youmu-modal_title{
     margin: 52px 0 96px;
     text-align: center;
@@ -507,3 +522,47 @@
 .youmu-announcement_marquee{
     padding: 0 50px;
 }
+
+
+ul.marquee {
+    display: block;
+    line-height: 1;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 22px;
+}
+ul.marquee li {
+    position: absolute;
+    top: -999em;
+    left: 0;
+    display: block;
+    white-space: nowrap;
+    padding: 3px 5px;
+    text-indent:0.8em
+ }
+
+@media screen and (max-width: 750px) {
+    .youmu-modal_box1{
+        position: absolute;
+        width: 960px;
+        height: 460px;
+        top: 50%;
+        left: 50%;
+        margin-top: -430px;
+        margin-left: -480px;
+    }
+    .youmu-modal_banner{
+        width: 100%;
+        height: 100%;
+    }
+    .youmu-modal_close {
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+        background: url("../image/close.png") no-repeat center center #fff;
+        position: absolute;
+    }
+}
+
+
