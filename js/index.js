@@ -28,6 +28,7 @@ $(function () {
         $('html , body').animate({scrollTop: 0},'slow');
      });
     $('.dowloadPC').click(function () {
+        AnalysysAgent.track("pcdownload_web");
         window.location.href = 'https://youmu.youmugame.com/youmuDowloadFile/游募PC端（新版）.zip'
     })
     $('.youmu-modal_pc').click(function () {
@@ -41,6 +42,7 @@ $(function () {
         $('#youmuModal').show(100);
     })
     $('#closemodal1').click(function () {
+        AnalysysAgent.track("closehd_web");
         $('#youmuModal1').hide(100);
     })
     $('#youmuModal1').show(100);
