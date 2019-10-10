@@ -45,7 +45,7 @@ $(function () {
         AnalysysAgent.track("closehd_web");
         $('#youmuModal1').hide(100);
     })
-    $('#youmuModal1').show(100);
+    // $('#youmuModal1').show(100);
     window.onresize = function () {
         current = document.documentElement.clientWidth;
         if(browserRedirect() && current>=1000){
