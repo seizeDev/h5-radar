@@ -17,6 +17,29 @@ $(function () {
     } else {
         console.log('PC端')
     }
+
+   function getQueryString (variable) {
+        let query = window.location.search.substring(1);
+       let vars = query.split("&");
+        for (let i = 0; i < vars.length; i++) {
+            let pair = vars[i].split("=");
+            if (pair[0] == variable) {
+                return decodeURIComponent(pair[1]);
+            }
+        }
+        return (null);
+    }
+
+    // 渠道用户判断
+    let campaign_id = getQueryString('campaign_id');
+    console.log(campaign_id)
+    if(campaign_id){
+        if(campaign_id=='2866087592'){
+            $('.dowload-topapp').addClass('dowload-topapp_2866087592')
+            $('.youmu-aside-list_app').addClass('youmu-aside-list_2866087592')
+        }
+    }
+
     console.log(current)
     if(browserRedirect() && current>=1000){
         document.getElementById('youmuBox').style.zoom =current/1920;

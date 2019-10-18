@@ -117,10 +117,17 @@
 .youmu-aside-list_app{
     background-image: url("../image/app.png");
 }
-.youmu-aside-list_app:hover p{
+.youmu-aside-list_app p{
     background-image: url("../image/youmu_dowload.png");
+}
+
+.youmu-aside-list_2866087592 p{
+    background-image: url("../image/2866087592.png");
+}
+.youmu-aside-list_app:hover p{
     display: block;
 }
+
 .youmu-aside-list_pc{
     background-image: url("../image/pc.png");
 }
@@ -196,9 +203,13 @@
     margin-left: -70px;
     display: none;
 }
+.dowload-topapp_2866087592 p{
+    background-image: url("../image/2866087592.png");
+}
 .dowload-topapp:hover p{
     display: block;
 }
+
 .dowload-topapp span{
     margin-bottom: 8px;
     font-size: 24px;
