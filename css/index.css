@@ -357,11 +357,14 @@
     padding: 48px 0 0 0;
     color: #F5F5F5;
     overflow: hidden;
+    text-align: center;
 }
 .youmu-footer_list{
-    width: 978px;
+    /*width: 978px;*/
     height: 160px;
     margin: 0 auto;
+    display: inline-block;
+    text-align: left;
 }
 .youmu-footer_list h4{
     padding: 20px 10px;
