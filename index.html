@@ -2,192 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>游募-放心的剑网三交易平台</title>
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
-    <meta name="description" content="是国内首家专注于为全类型游戏用户提供多元化、个性化、定制化服务交易支持游戏商品及周边交易服务，坚持持续创新、开放合作、用户至上、技术驱动，在游戏领域的买方卖方之间构筑精准、安全、稳定、快捷、双赢的服务解决方案优势，为服务提供方、商品销售方提供有竞争力的服务，为玩家提供安全、快捷、省时、省力、省心、省钱、多元化、个性化、定制化的一站式服务。"/>
-    <meta name="keyword" content="游募,代练,新剑网3,剑侠情缘3,剑网3,剑侠3,剑3,攻略,纯武侠网游,经脉加点,资料库,新手指南,天策,万花,七秀,纯阳,少林,藏剑,五毒,游戏心得,下载,客户端,更新包,官网,剑网3官网,金山" />
+    <title>测试DEMO</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css?v=0.0.14">
-    <link rel="shortcut icon" href="./image/logo.png">
 </head>
-<script>
-    window.yiguanInit = function(config = {}) {
-        config.uploadURL = 'https://ark-customer.analysys.cn:4089';
-        window.AnalysysAgent = window.AnalysysAgent || []
-        window.AnalysysAgent.methods = 'identify alias reset track profileSet profileSetOnce profileIncrement profileAppend profileUnset profileDelete registerSuperProperty registerSuperProperties unRegisterSuperProperty clearSuperProperties getSuperProperty getSuperProperties pageView debugMode auto appkey name uploadURL hash visitorConfigURL autoProfile autoWebstay encryptType pageProperty'.split(' ');
-
-        function factory(b) {
-            return function() {
-                var a = Array.prototype.slice.call(arguments);
-                a.unshift(b);
-                window.AnalysysAgent.push(a);
-                return window.AnalysysAgent;
-            }
-        };
-        for (var i = 0; i < AnalysysAgent.methods.length; i++) {
-            var key = window.AnalysysAgent.methods[i];
-            AnalysysAgent[key] = factory(key);
-        }
-        for (var key in config) {
-            AnalysysAgent[key](config[key])
-        }
-        var date = new Date();
-        var time = new String(date.getFullYear()) + new String(date.getMonth() + 1) + new String(date.getDate());
-
-        var d = document,
-            c = d.createElement('script'),
-            n = d.getElementsByTagName('script')[0];
-        c.type = 'text/javascript';
-        c.async = true;
-        c.id = 'ARK_SDK';
-        c.src = window.location.protocol+'//h5test.youmugame.com/commonJs/sdk/AnalysysAgent_JS_SDK.min.js?' + time //JS SDK存放地址
-        n.parentNode.insertBefore(c, n);
-    }
-    window.yiguanInit({
-        appkey: '1de2ad7439a805d9', //APPKEY
-        debugMode: 0,
-        uploadURL: 'https://ark-customer.analysys.cn:4089'
-    })
-</script>
 <body>
-<div id="youmuBox" class="youmu-box">
-    <header class="youmu-header">
-        <div class="youmu-header_img">游募</div>
-        <ul class="youmu-header_list">
-            <li><a href="#index">首页</a></li>
-            <li><a href="#product">产品介绍</a></li>
-            <li><a href="#about">联系我们</a></li>
-            <!--<li>帮助</li>-->
-        </ul>
-    </header>
-    <div class="youmu-app1" id="index">
-        <div class="app1"></div>
-        <div class="app1_content">
-            <h2>游募2.0全新上线，欢迎体验！</h2>
-            <p class="app1_content_prompt">找代练，安全放心；来接单，技能变现</p>
-            <button class="dowload-topapp">
-                <span>下载游募2.0APP</span><br/>
-                （通过APP发单、抢单）
-                <p class="dowload-topapp_qrcode"></p>
-            </button>
-            <button class="dowload-topapp dowloadPC">
-                <span>下载游募2.0PC端</span><br/>
-                （代练通过PC端执行订单）
-            </button>
-            <p class="app1_content_ios">测试阶段，IOS用户需要添加信任才能正常使用，<a href="https://weibo.com/ttarticle/p/show?id=2309404333804473947034#_0">点击查看详情</a></p>
-            <!--<p class="app1_content_ios"><span class="youmu-appa" id="openmodal">下载旧版游募APP及PC端请点击此处</span></p>-->
-            <p class="app1_content_ios" style="color: #999;">如需下载旧版游募APP及PC客户端，请联系客服</p>
-        </div>
-    </div>
-    <div class="youmu-app2" id="product">
-        <h4 class="youmu-title">老板发单</h4>
-        <h4 class="youmu-small-title">THE BOSS RELEASE ORDER</h4>
-        <div class="app2_list">
-            <div class="app2_list_1">
-                <h4>大神选美</h4>
-                <p>多个代练，自由选择</p>
-            </div>
-            <div class="app2_list_2">
-                <h4>订单截图</h4>
-                <p>进度透明知晓，先做单再结款</p>
-            </div>
-            <div class="app2_list_3">
-                <h4>福利返现</h4>
-                <p>订单优惠，低至一元</p>
-            </div>
-        </div>
-        <div class="youmu-app2_bj"></div>
-    </div>
-    <div class="youmu-app2">
-        <h4 class="youmu-title">代练抢单</h4>
-        <h4 class="youmu-small-title">WHEREAS ROB SINGLE</h4>
-        <div class="app2_list">
-            <div class="app2_list_4">
-                <h4>服务方认证</h4>
-                <p>多种技能变现</p>
-            </div>
-            <div class="app2_list_5">
-                <h4>消息推送</h4>
-                <p>精准推送，即时提醒</p>
-            </div>
-            <div class="app2_list_6">
-                <h4>订单沟通</h4>
-                <p>双向沟通，双向定价</p>
-            </div>
-        </div>
-        <div class="youmu-app2_bj3"></div>
-    </div>
-    <div class="youmu-modal" id="youmuModal">
-        <div class="youmu-modal_box">
-            <h4 class="youmu-modal_title">旧版游募APP和PC下载</h4>
-            <div class="youmu-modal_close" id="closemodal"></div>
-            <ul class="youmu-modal_list">
-                <li class="youmu-modal_app"><span class="youmu-modal_app_span"></span><span class="youmu-modal_app_span" id="channelApp"></span>APP下载</li>
-                <li class="youmu-modal_pc">PC端下载</li>
-            </ul>
-        </div>
-    </div>
-    <div class="youmu-modal" id="youmuModal1">
-        <div class="youmu-modal_box1">
-            <div class="youmu-modal_close" id="closemodal1"></div>
-            <img class="youmu-modal_banner" src="./image/box_bj.png">
-        </div>
-    </div>
-    <div class="youmu-app2">
-        <h4 class="youmu-title">游募PC端</h4>
-        <h4 class="youmu-small-title">YOUMUGAME COMPUTER CLIENT</h4>
-        <div class="app2_pc"></div>
-    </div>
-    <div class="app2_detail">
-        <h4>独立的PC端执行任务，够专业，够安全</h4>
-        <p>1、抢单后唯一登录游戏方式；2密码隐匿，自动登录；3、快速截图，上传截图。</p>
-    </div>
-    <aside class="youmu-aside">
-        <div class="youmu-aside-list youmu-aside-list_wechat"><p></p>微信公众号</div>
-        <div class="youmu-aside-list youmu-aside-list_weibo"><p></p>官方微博</div>
-        <div class="youmu-aside-list youmu-aside-list_qq"><p></p>官方客服</div>
-        <div class="youmu-aside-list youmu-aside-list_app"><p></p>APP下载</div>
-        <div class="youmu-aside-list youmu-aside-list_pc dowloadPC">PC端下载</div>
-        <div class="youmu-aside-list youmu-aside-list_top" id="goToTop">返回顶部</div>
-    </aside>
-    <footer class="youmu-footer" id="about">
-        <ul class="youmu-footer_list">
-            <li class="right-li" style="width: 700px;">
-                <h4>联<br/>系<br/>我<br/>们</h4>
-                <p>环球创新国际文化发展（北京）有限公司创立于2012年1月，旗下网络游戏服务网站“游募”，是专业搭建热门网络游戏交易、代练、陪练的服务网。游募网始终致力于“专业的游戏陪练服务管家”的服务理念，从用户角度经营完善游戏线下服务，提供更安全、更全面、更快捷、纯手动的服务体验。</p>
-                <!--<p>公司：环球创新国际文化发展（北京）有限公司</p>-->
-                <p>地址：北京朝阳区望京CBD方恒时代B座14层</p>
-            </li>
-            <li>
-                <h4>产<br/>品<br/>合<br/>作</h4>
-                <p>联系人：刘先生</p>
-                <p>QQ：3005016965</p>
-                <p>邮箱：youmu@youmugame.com</p>
-            </li>
-            <!--<li>-->
-                <!--<h4>下载地址</h4>-->
-                <!--<button class="dowload-app">-->
-                    <!--<span>下载游募APP</span><br/>-->
-                    <!--（通过APP端发单、抢单）-->
-                <!--</button>-->
-                <!--<button class="dowload-app">-->
-                    <!--<span>下载游募PC端</span><br/>-->
-                    <!--（代练通过PC端执行订单）-->
-                <!--</button>-->
-            <!--</li>-->
-        </ul>
-        <p class="youmu-footer_beian">京ICP备18023629号</p>
-    </footer>
-    <!--<div class="youmu-announcement">-->
-        <!--<div class="youmu-announcement_name">-->
-            <!--<marquee class="youmu-announcement_marquee" behavior="scroll"-->
-                     <!--scrollamount="6"> 游募1.0APP及PC端将于2019年9月20日停止服务，请各位老用户尽快完成游募1.0内的订单，并完成提现，到期未完成订单会强制关闭。欢迎下载游募软件Android端 V1.0继续和我们同行，感谢理解！</marquee>-->
-        <!--</div>-->
-    <!--</div>-->
+<div class="animete-box">
+    <div class="animete-boy animete-1 animated heartBeat"></div>
+    <div class="animete-girl animete-2 animated heartBeat"></div>
+    <div class="animete-girl animete-3 animated heartBeat"></div>
+    <div class="animete-boy animete-4 animated heartBeat"></div>
+    <div class="animete-girl animete-5 animated heartBeat"></div>
+    <div class="dot"></div>
+    <div class="pulse"></div>
+    <div class="pulse2"></div>
 </div>
 
 </body>
-<script src="./js/jq.min.js"></script>
-<script src="./js/jquery.marquee.js"></script>
-<script src="./js/index.js?v=0.0.14"></script>
 </html>

@@ -1,600 +1,254 @@
-.youmu-box{
-    width: 1920px;
+html{
+    background: #fff;
+    background-size:7.5rem auto;
+    -webkit-overflow-scrolling: touch;
+    min-height: 100vh;
+}
+body{
+    background: #fff;
+    background-size:cover;
+    max-width: 10rem;
+    -webkit-overflow-scrolling: touch;
     margin: 0 auto;
+    min-height: 100vh;
 }
-
-.youmu-header{
-    width: 1920px;
-    height: 104px;
-    overflow: hidden;
-    position: fixed;
-    background: #fff;
-    top:0;
-    left: 0;
-    z-index: 1;
-}
-.youmu-header_img{
-    background: url("../image/logo.png") no-repeat left center;
-    background-size: 60px 60px;
-    padding-left: 72px;
-    font-size: 22px;
-    color: #FF6633;
-    line-height: 60px;
-    height: 60px;
-    margin: 22px 0 0 410px;
-    float: left;
-}
-.youmu-header_list{
-    float: right;
-    margin-right: 390px;
-}
-.youmu-header_list li{
-    padding: 0 12px;
-    color: #666666;
-    float: left;
-    font-size: 18px;
-    line-height: 100px;
-    margin-left: 20px;
-    height: 100px;
-    cursor: pointer;
-}
-.youmu-header_list li a{
-    color: #666666;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-}
-.youmu-header_list li:hover{
-    color: #FF6633;
-    border-bottom: 4px solid #FF6633;
-}
-.youmu-header_list li:hover a{
-    color: #FF6633;
-}
-/*侧栏*/
-.youmu-aside{
-    position: fixed;
-    right: 52px;
-    width: 92px;
-    -moz-box-shadow:0px 0px 5px #D2D2D2;
-    -webkit-box-shadow:0px 0px 5px #D2D2D2;
-    box-shadow:0px 0px 5px #D2D2D2;
-    padding-bottom: 15px;
-    top:50%;
-    margin-top: -300px;
-    background: #fff;
-}
-.youmu-aside-list{
-    padding-top: 57px;
-    padding-bottom: 15px;
-    width: 92px;
-    background: url("../image/wechat.png") no-repeat center 15px;
-    background-size: 24px 24px;
-    font-size: 13px;
-    color: #999;
-    line-height: 18px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-}
-.youmu-aside-list:hover{
-    background-color: #F0F0F0;
-}
-.youmu-aside-list p{
+.animete-box{
+    width: 375px;
+    height: 375px;
+//position: relative;
+    /*background: -webkit-radial-gradient(center, rgba(0, 0, 0, 0.3) 50%, rgba(233, 40, 35, 0.6) 75%), -webkit-repeating-radial-gradient(rgba(32, 255, 77, 0) 5.8%, rgba(32, 255, 77, 0) 18%, #841413 18.6%, rgba(32, 255, 77, 0) 18.9%), -webkit-linear-gradient(90deg, rgba(32, 255, 77, 0) 49.5%, #841413 50%, #841413 50%, rgba(32, 255, 77, 0) 50.2%), -webkit-linear-gradient(0deg, rgba(32, 255, 77, 0) 49.5%, #841413 50%, #841413 50%, rgba(32, 255, 77, 0) 50.2%);*/
+    /*background: radial-gradient(center, rgba(0, 0, 0, 0.3) 50%, rgba(233, 40, 35, 0.6) 75%), repeating-radial-gradient(rgba(32, 255, 77, 0) 5.8%, rgba(32, 255, 77, 0) 18%, #841413 18.6%, rgba(32, 255, 77, 0) 18.9%), linear-gradient(90deg, rgba(32, 255, 77, 0) 49.5%, #841413 50%, #841413 50%, rgba(32, 255, 77, 0) 50.2%), linear-gradient(0deg, rgba(32, 255, 77, 0) 49.5%, #841413 50%, #841413 50%, rgba(32, 255, 77, 0) 50.2%);*/
     position: absolute;
-    background: url("../image/aslide_wechat.jpg") no-repeat center center;
-    background-size: 110px 110px;
-    width: 120px;
-    height: 120px;
-    -moz-box-shadow:0px 0px 5px #D2D2D2;
-    -webkit-box-shadow:0px 0px 5px #D2D2D2;
-    box-shadow:0px 0px 5px #D2D2D2;
-    left: -130px;
-    top: 0px;
-    display: none;
-}
-
-.youmu-aside-list_wechat{
-    background-image: url("../image/wechat.png");
-}
-.youmu-aside-list_wechat:hover p{
-   display: block;
-}
-.youmu-aside-list_weibo{
-    background-image: url("../image/weibo.png");
-}
-.youmu-aside-list_weibo:hover p{
-    background-image: url("../image/aslide_weibo.png");
-    display: block;
-}
-.youmu-aside-list_qq{
-    background-image: url("../image/qq.png");
-}
-.youmu-aside-list_qq:hover p{
-    background-image: url("../image/aslide_qq.jpg");
-    display: block;
-}
-.youmu-aside-list_app{
-    background-image: url("../image/app.png");
-}
-.youmu-aside-list_app p{
-    background-image: url("../image/youmu_dowload.png");
-}
-
-.youmu-aside-list_2866087592 p{
-    background-image: url("../image/2866087592.png");
-}
-.youmu-aside-list_app:hover p{
-    display: block;
-}
-
-.youmu-aside-list_pc{
-    background-image: url("../image/pc.png");
-}
-.youmu-aside-list_top{
-    background-image: url("../image/top.png");
-}
-
-/**/
-.youmu-app1{
-    height: 860px;
-    background: url("../image/bj_01.png") no-repeat left top;
-    background-size: 1065px 680px;
-    overflow: hidden;
-    margin-top: 104px;
-}
-.youmu-app1 .app1{
-    background: url("../image/app_01.png") no-repeat center center;
-    background-size: 342px 680px;
-    height: 680px;
-    width: 342px;
-    margin-left: 410px;
-    margin-top: 120px;
-    float: left;
-}
-.app1_content{
-    float: left;
-    padding-top: 272px;
-    padding-left: 60px;
-}
-.app1_content h2{
-    font-size: 48px;
-    color: #FF6633;
-    line-height: 80px;
-}
-.app1_content_prompt{
-    position: relative;
-    font-size: 20px;
-    color: #666;
-    line-height: 28px;
-    margin-top: 60px;
-}
-.app1_content_prompt:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    background: #FF6633;
-    width: 28px;
-    height: 4px;
-}
-.dowload-topapp{
-    background: #FF6633;
-    color: #F5F5F5;
-    padding: 10px 42px;
-    border-radius: 4px;
-    border: none;
-    margin-top: 32px;
-    margin-right: 50px;
-    position: relative;
-
-}
-.dowload-topapp p{
-    position: absolute;
-    background: url("../image/youmu_dowload.png") no-repeat center center #fff;
-    background-size: 120px 120px;
-    width: 140px;
-    height: 140px;
-    -moz-box-shadow:0px 0px 5px #D2D2D2;
-    -webkit-box-shadow:0px 0px 5px #D2D2D2;
-    box-shadow:0px 0px 5px #D2D2D2;
     left: 50%;
-    top: 101%;
-    margin-left: -70px;
-    display: none;
-}
-.dowload-topapp_2866087592 p{
-    background-image: url("../image/2866087592.png");
-}
-.dowload-topapp:hover p{
-    display: block;
-}
-
-.dowload-topapp span{
-    margin-bottom: 8px;
-    font-size: 24px;
-    color: #fff;
-}
-.app1_content_ios{
-    margin-top: 36px;
-    font-size: 16px;
-}
-.youmu-app2{
-    color: #666;
-    position: relative;
-}
-.youmu-app2_bj{
-    position: absolute;
-    right: 0;
-    top:440px;
-    background: url("../image/bj_02.png") no-repeat right center;
-    background-size: 594px 1259px;
-    width: 594px;
-    height: 1259px;
-}
-.youmu-app2_bj3{
-    position: absolute;
-    left: 0;
-    top:800px;
-    background: url("../image/bj_03.png") no-repeat left center;
-    background-size: 402px 786px;
-    width: 402px;
-    height: 786px;
-}
-.youmu-app2 a{
-    color: #6381CE;
-    border-bottom: 1px solid #6381CE;
-}
-.youmu-appa{
-    margin-top: 36px;
-    color: #6381CE;
-    border-bottom: 1px solid #6381CE;
-    cursor: pointer;
-    font-size: 16px;
-}
-.youmu-title{
-    font-size: 32px;
-    color: #FF6633;
-    line-height: 45px;
-    text-align: center;
-    margin-top: 240px;
-}
-.youmu-small-title{
-    font-size: 12px;
-    color: #FF6633;
-    text-align: center;
-}
-.app2_list{
-    margin-top: 80px;
-    overflow: hidden;
-    padding-left: 410px;
-}
-.app2_list_1{
-    padding-top: 628px;
-    width: 292px;
-    background: url("../image/app_02.png") no-repeat center top;
-    background-size: 292px 592px;
-    float: left;
-    margin-right: 120px;
-
-}
-.app2_list_2{
-    padding-top: 628px;
-    width: 292px;
-    background: url("../image/app_03.png") no-repeat center top;
-    background-size: 292px 592px;
-    float: left;
-    margin-right: 120px;
-}
-.app2_list_3{
-    padding-top: 628px;
-    width: 292px;
-    background: url("../image/app_04.png") no-repeat center top;
-    background-size: 292px 592px;
-    float: left;
-}
-.app2_list_4{
-    padding-top: 628px;
-    width: 292px;
-    background: url("../image/app_05.png") no-repeat center top;
-    background-size: 292px 592px;
-    float: left;
-    margin-right: 120px;
-
-}
-.app2_list_5{
-    padding-top: 628px;
-    width: 292px;
-    background: url("../image/app_06.png") no-repeat center top;
-    background-size: 292px 592px;
-    float: left;
-    margin-right: 120px;
-}
-.app2_list_6{
-    padding-top: 628px;
-    width: 292px;
-    background: url("../image/app_07.png") no-repeat center top;
-    background-size: 292px 592px;
-    float: left;
-}
-.app2_list h4{
-    font-size: 22px;
-    color: #FF6633;
-    text-align: center;
-    margin-bottom: 12px;
-}
-.app2_list p{
-    font-size: 16px;
-    text-align: center;
-    line-height: 22px;
-}
-.app2_pc{
-    width: 900px;
-    height: 636px;
-    margin-top: 80px;
-    background: url("../image/app_pc.png") no-repeat center center;
-    background-size: 900px 636px;
-    margin-left: 510px;
-}
-
-.app2_detail h4{
-    font-size: 22px;
-    color: #FF6633;
-    margin-top: 26px;
-    text-align: center;
-}
-.app2_detail p{
-    font-size: 16px;
-    margin-top: 20px;
-    text-align: center;
-    color: #666;
-}
-
-/*底部*/
-.youmu-footer{
-    margin-top: 138px;
-    background: #333333;
-    padding: 48px 0 0 0;
-    color: #F5F5F5;
-    overflow: hidden;
-    text-align: center;
-}
-.youmu-footer_list{
-    /*width: 978px;*/
-    height: 160px;
-    margin: 0 auto;
-    display: inline-block;
-    text-align: left;
-}
-.youmu-footer_list h4{
-    padding: 20px 10px;
-    font-size: 20px;
-    position: absolute;
-    left: -20px;
-    top: -28px;
-    background: #FF6633;
-    line-height: 1.4;
-}
-.youmu-footer_list p{
-    padding-top: 12px;
-    font-size: 14px;
-    color: #F5F5F5;
-}
-.youmu-footer_list li{
-    float: left;
-    border: 1px solid #FF6633;
-    width: 400px;
-    height: 160px;
-    padding: 20px 0 0 30px;
-    position: relative;
-    box-sizing: border-box;
-}
-.youmu-footer_list .right-li{
-    margin-right: 178px;
-}
-.dowload-app{
-    color: #666;
-    font-size: 12px;
-    text-align: center;
-    padding: 8px 14px;
-    border-radius: 1px;
-    margin-right: 30px;
-    margin-top: 32px;
-}
-.dowload-app span{
-    font-size: 16px;
-    line-height: 22px;
-    color: #333;
-    margin-bottom: 4px;
-}
-.youmu-footer_beian{
-    font-size: 13px;
-    color: #999;
-    padding: 25px 0;
-    text-align: center;
-    clear: both;
-    margin-top: 60px;
-    border-top: 2px solid #999;
-}
-
-/*弹窗*/
-.youmu-modal{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom:0 ;
-    left: 0;
-    background: rgba(0,0,0,.7);
-    z-index: 1;
-    display: none;
-}
-.youmu-modal_box{
-    position: absolute;
-    width: 960px;
-    height: 460px;
     top: 50%;
-    left: 50%;
-    margin-top: -230px;
-    margin-left: -480px;
-    background: #fff;
-    border-radius: 16px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
 }
 
-.youmu-modal_box1{
-    position: absolute;
-    width: 960px;
-    height: 460px;
-    top: 50%;
-    left: 50%;
-    margin-top: -230px;
-    margin-left: -480px;
-    background-size: 960px 460px;
-}
-.youmu-modal_banner{
-    width: 100%;
-    height: 100%;
-}
-
-.youmu-modal_title{
-    margin: 52px 0 96px;
-    text-align: center;
-    color: #333;
-    font-size: 32px;
-}
-.youmu-modal_list{
-    color: #FF6633;
-    font-size: 24px;
-}
-.youmu-modal_list li{
-    cursor: pointer;
-    position: relative;
-    width: 120px;
-    padding-top: 120px;
-    background: url("../image/app_dowload.png") no-repeat center top;
-    background-size: 100px 100px;
-    float: left;
-    font-size: 24px;
-    text-align: center;
-    margin-left: 248px;
-}
-.youmu-modal_list .youmu-modal_pc{
-    background-image: url("../image/pc_dowload.png");
-}
-.youmu-modal_list .youmu-modal_app_span{
-    position: absolute;
-    background: url("../image/old_youmu_dowload.png") no-repeat center center #fff;
-    background-size: 120px 120px;
-    width: 140px;
-    height: 140px;
-    -moz-box-shadow:0px 0px 5px #D2D2D2;
-    -webkit-box-shadow:0px 0px 5px #D2D2D2;
-    box-shadow:0px 0px 5px #D2D2D2;
-    left: 50%;
-    top: 0;
-    margin-left: -70px;
-    display: none;
-}
-.youmu-modal_list .youmu-modal_app:hover .youmu-modal_app_span{
-    display: block;
-}
-.youmu-modal_close{
-    width: 24px;
-    height: 24px;
-    background-size: 24px 24px;
-    background: url("../image/close.png") no-repeat center center;
-    position: absolute;
-    right: 20px;
-    top:20px;
-}
-@keyframes marquee {
+/*css3波纹*/
+.wrap__uc-waves{overflow:hidden;height:1rem;width:100%;position:absolute;bottom:0;}
+.wrap__uc-waves .wave{width:15rem; transform-origin:center bottom; position:absolute;left:0;bottom:0;}
+.wrap__uc-waves .w1{
+    background-size:cover; height:.5rem; animation:anim_wave 5s linear infinite;}
+.wrap__uc-waves .w2{
+    background-size:cover; height:.7rem; animation:anim_wave 6s linear infinite;}
+@keyframes anim_wave {
     0% {
-        transform: translateX(200px);
+        transform: translateX(0) translateZ(0) scaleY(1)
     }
     50% {
-        transform: translateX(-500px); // 每行高50
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
     }
-    100%{
-        transform: translateX(200px); // 每行高50
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
     }
 }
-.youmu-announcement{
+
+
+.animete-box:before {
+    content: ' ';
+    display: block;
+    position: absolute;
     width: 100%;
-    bottom: 0;
-    left: 0;
-    background: #FFFDE4;
-    height: 64px;
-    line-height: 64px;
-    position: fixed;
+    height: 100%;
+    border-radius: 50%;
 }
-.youmu-announcement_name{
-    white-space:nowrap;
-    /*-webkit-animation: marquee 15s linear infinite;*/
-    /*animation: marquee 15s linear infinite;*/
-}
-
-.youmu-announcement_marquee{
-    padding: 0 50px;
-}
-
-
-ul.marquee {
+.animete-box:after {
+    content: ' ';
     display: block;
-    line-height: 1;
-    position: relative;
-    overflow: hidden;
-    width: 400px;
-    height: 22px;
-}
-ul.marquee li {
+    background-image: linear-gradient(44deg, rgba(0, 255, 51, 0) 50%, #841413 100%);
+    width: 50%;
+    height: 50%;
     position: absolute;
-    top: -999em;
+    top: 0;
     left: 0;
-    display: block;
-    white-space: nowrap;
-    padding: 3px 5px;
-    text-indent:0.8em
- }
-.youmu-modal_box2{
-    position: absolute;
-    width: 90%;
-    top: 25%;
-    left: 5%;
-    height: auto;
-    margin-top: 0;
-    margin-left: 0;
+    animation: radar-beam 5s infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom right;
+    border-radius: 100% 0 0 0;
 }
-.youmu-modal_close2{
-    width: 100px;
-    height: 100px;
+
+
+@keyframes radar-beam {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animete-boy{
+    width: 50px;
+    height: 50px;
+    background: url("../image/boy.png") no-repeat center center;
+    background-size: 50px 50px;
+}
+.animete-girl{
+    width: 50px;
+    height: 50px;
+    background: url("../image/girl.png") no-repeat center center;
+    background-size: 50px 50px;
+}
+
+.animete-1{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    z-index: 3;
+}
+.animete-2{
+    position: absolute;
+    left: 200px;
+    top: 10px;
+    z-index: 3;
+}
+.animete-3{
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    z-index: 3;
+}
+.animete-4{
+    position: absolute;
+    left: 280px;
+    top: 120px;
+    z-index: 3;
+}
+.animete-5{
+    position: absolute;
+    left: 250px;
+    top: 180px;
+    z-index: 3;
+}
+
+@keyframes heartBeat {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    14% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    22% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    42% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    54% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+
+    60%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    80%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.heartBeat {
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+@keyframes warn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    25% {
+        transform: scale(0.25);
+        opacity: 0.1;
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: 0.3;
+    }
+    75% {
+        transform: scale(0.75);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.0;
+    }
+}
+/* 保持大小不变的小圆圈  */
+.dot {
+    position: absolute;
+    background: #e20000;
+    width: 10px;
+    height: 10px;
     left: 50%;
-    margin-left: -50px;
-    bottom: -200px;
-    top: initial;
-    background: url("../image/close_02.png") no-repeat center center;
-    background-size: 100px 100px;
+    top: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 10px;
+    z-index: 2;
+}
+/* 产生动画（向外扩散变大）的圆圈  */
+.pulse {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    border: 6px solid red;
+    box-shadow: 0px 0px 20px red inset;
+    border-radius: 150px;
+    z-index: 1;
+    opacity: 0;
+    animation: warn 1.8s linear;
+    animation-iteration-count: infinite!important;
 }
 
-@media screen and (max-width: 750px) {
-    .youmu-modal_box1{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 50%;
-        left: 0;
-        margin-top: -430px;
-        margin-left: -480px;
-    }
-    .youmu-modal_banner{
-        width: 100%;
-        height: 100%;
-    }
-    .youmu-modal_close {
-        width: 50px;
-        height: 50px;
-        background-size: 50px 50px;
-        background: url("../image/close.png") no-repeat center center #fff;
-        position: absolute;
-    }
+.pulse2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    border: 6px solid red;
+    box-shadow: 0px 0px 20px red inset;
+    border-radius: 150px;
+    z-index: 1;
+    opacity: 0;
+    animation: warn 1.8s linear;
+    animation-delay:0.6s;
+    animation-iteration-count: infinite!important;
 }
-
-
